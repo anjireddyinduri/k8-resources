@@ -14,11 +14,11 @@ spec:
       tier: web
       project: test-project
     template:
-    metadata:
-      labels:
-        app: nginx   
-        tier: web
-        project: test-project
+      metadata:
+        labels:
+          app: nginx   
+          tier: web
+          project: test-project
     spec:
       containers:
       - name: nginx

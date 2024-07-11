@@ -9,9 +9,9 @@ spec:
   # modify replicas according to your case
   replicas: 3  
   selector:
-  matchLabels:
-    tier: frontend
-    app: nginx
+    matchLabels:
+      tier: frontend
+      app: nginx
   template:
     metadata:
       labels:

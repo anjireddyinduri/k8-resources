@@ -7,14 +7,14 @@ metadata:
     tier: frontend
 spec:  
   # modify replicas according to your case
-   replicas: 3  
-   selector:
-   matchLabels:
-      tier: frontend
-      app: nginx
-   template:
+  replicas: 3  
+  selector:
+  matchLabels:
+    tier: frontend
+    app: nginx
+  template:
     metadata:
-      labels:
+     labels:
       tier: frontend  
     spec:
       containers:

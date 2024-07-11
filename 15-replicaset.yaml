@@ -5,18 +5,18 @@ metadata:
   labels:
     app: nginx
     tier: frontend
-  spec:
+spec:  
   # modify replicas according to your case
-    replicas: 3  
-    selector:
-      matchLabels:
-       tier: frontend
-       app: nginx
-    template:
-     metadata:
+  replicas: 3  
+  selector:
+    matchLabels:
+      tier: frontend
+      app: nginx
+  template:
+    metadata:
       labels:
-       tier: frontend  
-     spec:
+      tier: frontend  
+    spec:
       containers:
-      -name: nginx
-      image: nginx    
+      - name: nginx
+        image: nginx    

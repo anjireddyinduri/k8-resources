@@ -14,9 +14,9 @@ spec:
     app: nginx
   template:
     metadata:
-     labels:
-      tier: frontend  
+      labels:
+        tier: frontend  
     spec:
       containers:
-      - name: nginx
-        image: nginx    
+        - name: nginx
+          image: nginx    
